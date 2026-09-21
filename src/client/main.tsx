@@ -16,7 +16,7 @@ createRoot(document.getElementById("root")!).render(
     <div
       aria-hidden
       className="pointer-events-none fixed inset-0 z-0 bg-[#02040b] bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url(/bg.jpg)" }}
+      style={{ backgroundImage: "url(/bg.jpg)" }} />
     <div className="zest-viewport relative z-10">
       <RouterProvider router={router} />
     </div>
