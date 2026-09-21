@@ -1,6 +1,6 @@
 import { RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
-import { GlobalLiquidBackground } from "./components/GlobalLiquidBackground";
+// import { GlobalLiquidBackground } from "./components/GlobalLiquidBackground";
 import { GlobalScrollbars } from "./components/GlobalScrollbars";
 import { ThemeProvider } from "./components/theme";
 import { router } from "./router";
@@ -12,7 +12,11 @@ document.documentElement.style.colorScheme = "dark";
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider>
     <GlobalScrollbars />
-    <GlobalLiquidBackground />
+    {/* <GlobalLiquidBackground /> */}
+    <div
+      aria-hidden
+      className="pointer-events-none fixed inset-0 z-0 bg-[#02040b] bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url(/bg.jpg)" }}
     <div className="zest-viewport relative z-10">
       <RouterProvider router={router} />
     </div>
